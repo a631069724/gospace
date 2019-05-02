@@ -1,9 +1,11 @@
 package conf
 
 type Config struct {
+	RunSql *RunSql
 	Log    *Log
 	Redis  *Redis
 	Oracle *Oracle
+	Tick   int
 }
 
 type Log struct {
@@ -19,4 +21,8 @@ type Oracle struct {
 	UserName string
 	Pwd      string
 	Source   string
+}
+
+type RunSql struct {
+	Sql []string
 }
