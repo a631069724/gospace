@@ -1,7 +1,6 @@
 package subject
 
 import (
-	"fmt"
 	"sync"
 )
 
@@ -28,7 +27,6 @@ func (this *ObservableImp) AddObserver(o Observer) {
 	this.Lock()
 	defer this.Unlock()
 	this.observers = append(this.observers, o)
-	fmt.Println(this.observers)
 }
 
 func (this *ObservableImp) DeleteObserver(o Observer) {

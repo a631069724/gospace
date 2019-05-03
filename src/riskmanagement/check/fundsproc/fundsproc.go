@@ -31,7 +31,10 @@ func (this *FundsProcer) ClosePosition(p position.Position) {
 	pool := utils.GetRedisFactory().GetPool(this.redis.Uri).Get()
 	defer pool.Close()
 	log.Info("Position:%s Close Data:%b", p.GetPositionId(), reqData)
-	pool.Do("lpush", this.redis.WriteId, reqData)
+	_, err := pool.Do("lpush", this.redis.WriteId, reqData)
+	if err != nil {
+		log.Info("redis lpush err:%v", err)
+	}
 }
 
 //func (this *FundsProcer) DeleteFollowRelation(fwUid string) {

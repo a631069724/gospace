@@ -3,10 +3,13 @@ package check
 import (
 	"flag"
 	"fmt"
+	"os"
+	"os/signal"
 	"riskmanagement/check/fundscheck"
 	"riskmanagement/check/fundsproc"
 	"riskmanagement/conf"
 	"riskmanagement/log"
+	"syscall"
 	"time"
 )
 
@@ -21,10 +24,20 @@ func Run() {
 	fmt.Println("Log File:", conf.Conf.Log.Path)
 	log.InitLog(conf.Conf.Log.Path)
 	fchk := fundscheck.NewFundsChecker(conf.Conf)
-	fproc := fundsproc.NewFundsProcer(fchk.GetObservable(), conf.Conf.Redis)
-	fmt.Println("funds procer:", fproc)
-	ticker := time.NewTicker(time.Duration(conf.Conf.Tick) * time.Second)
-	for _ = range ticker.C {
-		fchk.Check()
+	fundsproc.NewFundsProcer(fchk.GetObservable(), conf.Conf.Redis)
+	tick := time.Duration(conf.Conf.Tick)
+	sigs := make(chan os.Signal, 1)
+	signal.Notify(sigs, syscall.SIGTERM, syscall.SIGUSR1)
+	fmt.Println("=====risk management bigen running=====")
+	for {
+		select {
+		case <-time.After(tick * time.Second):
+			fchk.Check()
+		case <-sigs:
+			log.Info("catch exit signal")
+			log.Close()
+			os.Exit(0)
+		}
 	}
+
 }
