@@ -24,19 +24,20 @@ func (this *TlvPacker) Get(name string) ([]byte, error) {
 
 func (this *TlvPacker) Pack() []byte {
 	tagCount, dataLen := 0, 0
-	retData := make([]byte, 1024, 1024)
-	retDataTmp := make([]byte, 1024, 1024)
+	retData := make([]byte, 0, 1024)
+	retDataTmp := make([]byte, 0, 1024)
 	this.data.Range(func(key, value interface{}) bool {
-		tlvdata := make([]byte, 100, 100)
+		tlvdata := make([]byte, 0, 128)
 		rkey := key.(string)
 		rvalue := value.([]byte)
 		rvlen := len(rvalue)
 		tagCount++
 		dataLen += len(rkey) + 5 + rvlen
 		tlvdata = append(tlvdata, []byte(rkey)...)
-		tlvdata[len(tlvdata)] = 0x00
+		tlvdata = append(tlvdata, 0x00)
+
 		tlvdata = append(tlvdata, []byte(fmt.Sprintf("%03d", rvlen))...)
-		tlvdata[len(tlvdata)] = 0x00
+		tlvdata = append(tlvdata, 0x00)
 		tlvdata = append(tlvdata, rvalue...)
 		retDataTmp = append(retDataTmp, tlvdata...)
 		return true
