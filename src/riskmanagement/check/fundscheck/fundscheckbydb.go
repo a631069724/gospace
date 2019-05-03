@@ -7,6 +7,8 @@ import (
 	"riskmanagement/log"
 	"riskmanagement/subject"
 	"riskmanagement/tranpack/position"
+
+	_ "github.com/wendal/go-oci8"
 )
 
 type FundsChecker struct {
@@ -34,6 +36,7 @@ func NewFundsChecker(c conf.Config) *FundsChecker {
 
 func (this *FundsChecker) Check() error {
 	for _, sqlstr := range this.runPositionSql.Sql {
+		fmt.Println("Run Sql:", sqlstr)
 		log.Info("Run Sql:%s", sqlstr)
 		rows, err := this.db.Query(sqlstr)
 		if err != nil {
@@ -50,7 +53,7 @@ func (this *FundsChecker) Check() error {
 			this.deleteFollowRelation(pst.UserId)
 			log.Info("Position:%d Notify", pst.PositionId)
 			this.SetChanged()
-			this.NotifyObserver()
+			this.NotifyObserver(pst)
 
 		}
 	}

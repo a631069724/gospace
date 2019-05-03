@@ -1,19 +1,20 @@
 package subject
 
 import (
+	"fmt"
 	"sync"
 )
 
 type Observable interface {
 	AddObserver(Observer)
 	DeleteObserver(Observer)
-	NotifyObserver()
+	NotifyObserver(e interface{})
 	SetChanged()
 }
 
 func NewObservable() Observable {
 	return &ObservableImp{
-		observers: make([]Observer, 100, 100),
+		observers: make([]Observer, 0, 100),
 	}
 }
 
@@ -27,6 +28,7 @@ func (this *ObservableImp) AddObserver(o Observer) {
 	this.Lock()
 	defer this.Unlock()
 	this.observers = append(this.observers, o)
+	fmt.Println(this.observers)
 }
 
 func (this *ObservableImp) DeleteObserver(o Observer) {
@@ -43,10 +45,12 @@ func (this *ObservableImp) SetChanged() {
 	this.changed = true
 }
 
-func (this *ObservableImp) NotifyObserver() {
+func (this *ObservableImp) NotifyObserver(e interface{}) {
 	if this.changed {
 		for _, v := range this.observers {
-			v.Update(this)
+			if v != nil {
+				v.Update(e)
+			}
 		}
 		this.changed = false
 	}

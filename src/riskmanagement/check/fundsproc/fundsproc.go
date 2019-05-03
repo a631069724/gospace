@@ -16,8 +16,9 @@ type FundsProcer struct {
 	subject.Observable
 }
 
-func NewFundsProcer(ob subject.Observable) *FundsProcer {
+func NewFundsProcer(ob subject.Observable, redis *conf.Redis) *FundsProcer {
 	p := &FundsProcer{
+		redis:      redis,
 		Observable: ob,
 	}
 	ob.AddObserver(p)
