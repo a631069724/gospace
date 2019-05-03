@@ -1,18 +1,18 @@
 {
     "Tick":1,
     "Log":{  
-        "Path":"D:/gospace/src/riskmanagement/log/log.txt"
+        "Path":"file_path"
     },
     "Redis":{
-        "Uri":"redis://47.101.62.62:6379",
-        "WriteId":"99"
+        "Uri":"redis://********:6379",
+        "WriteId":"test"
     },
     "Oracle":{
-        "UserName":"fpp",
-        "Pwd":"!QAZ314sdfDend",
-        "Source":"47.101.62.62:1521/orcl"
+        "UserName":"*******",
+        "Pwd":"******",
+        "Source":"ip:port/sid"
     },
     "RunSql":{
-        "Sql":["select U_ID,CONTRACT_ENAME,CONTRACT_DATE,POSITION_ID,NUM,BUYORSELL from yishenglong_trad_position"]
+        "Sql":["select * from dual"]
     }
 }
