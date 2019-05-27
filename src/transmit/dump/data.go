@@ -287,6 +287,9 @@ func OracleTableInit(storer *OraclStorer) {
    req_reserved varchar(512),
    reserved varchar(512) 
   )';
+  alter table PAY_CONSUME_REQ
+  add constraint PK_CONSUME_REQ primary key (APP_MER_ID, TRANS_MER_TYPE, INST_OP_ID, INST_SERVICE_ID, DEVICE_ID, ORDER_ID, TXN_TIME, INST_ORDER_ID)
+  using index ;
    END IF;
  END; `)
 	storer.RunSql(`DECLARE
@@ -308,6 +311,9 @@ func OracleTableInit(storer *OraclStorer) {
    reserved varchar(512),
    query_id varchar(21)
   )';
+  alter table PAY_CONSUME_RESP
+  add constraint PK_CONSUME_RESP primary key (ORDER_ID, INST_ORDER_ID, TXN_TIME, QUERY_ID)
+  using index ;
    END IF;
  END; `)
 	storer.RunSql(`DECLARE
@@ -451,6 +457,9 @@ func OracleTableInit(storer *OraclStorer) {
    reserved varchar2(512),
    query_id varchar2(21)
   )';
+  alter table PAY_CANCEL_RESP
+  add constraint PK_CANCEL_RESP primary key (ORDER_ID, INST_ORDER_ID, TXN_TIME, ORIG_QRY_ID, ORIG_ORDER_ID)
+  using index ;
    END IF;
  END; `)
 	storer.RunSql(`DECLARE
@@ -487,6 +496,9 @@ func OracleTableInit(storer *OraclStorer) {
    acc_no varchar2(1024),
    iss_ins_code varchar2(11)
   )';
+  alter table PAY_NOTIFY_CANCEL_REQ
+  add constraint PK_NOTIFY_CONCEL_REQ primary key (MER_ID, ORDER_ID, INST_ORDER_ID, ORIG_QRY_ID, ORIG_TXN_TIME, TXN_TIME, ORIG_ORDER_ID, QUERY_ID, TRACE_NO, TRACE_TIME)
+  using index;
    END IF;
  END; `)
 	storer.RunSql(`DECLARE
@@ -507,6 +519,9 @@ func OracleTableInit(storer *OraclStorer) {
    orig_txn_time varchar2(14),
    txn_time varchar2(14)
   )';
+  alter table PAY_NOTIFY_CANCEL_RESP
+  add constraint PK_NOTIFY_CANCEL_RESP primary key (MER_ID, ORDER_ID, INST_ORDER_ID, ORIG_QRY_ID, ORIG_ORDER_ID, TXN_TIME)
+  using index;
    END IF;
  END; `)
 	storer.RunSql(`DECLARE
