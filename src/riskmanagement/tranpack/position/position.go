@@ -27,9 +27,9 @@ func (this *DefaultPosition) GetContract() string {
 	return this.ContrctEname + " " + this.ContractDate
 }
 
-func (this *DefaultPosition) GetPositionId() (spid string) {
-	fmt.Sprintf(spid, "%d", this.PositionId)
-	return
+func (this *DefaultPosition) GetPositionId() string {
+	return fmt.Sprintf("%d", this.PositionId)
+
 }
 
 func (this *DefaultPosition) GetCloseBuyOrSell() string {
@@ -39,7 +39,7 @@ func (this *DefaultPosition) GetCloseBuyOrSell() string {
 	return "1"
 }
 
-func (this *DefaultPosition) GetPositionNum() (num string) {
-	fmt.Sprintf(num, "%d", this.Num)
-	return
+func (this *DefaultPosition) GetPositionNum() string {
+	return fmt.Sprintf("%d", this.Num)
+
 }

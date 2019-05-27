@@ -1,18 +1,49 @@
 {
+    /*启动命令:
+      程序名 -conf conf.json 
+    */
+    //轮询时间间隔 单位秒
     "Tick":1,
-    "Log":{  
+    "Log":{ 
+        //日志文件 
         "Path":"file_path"
     },
     "Redis":{
+        //redis地址
         "Uri":"redis://********:6379",
+        //发送到redis的list reqshunt 是25
         "WriteId":"test"
     },
     "Oracle":{
+        //数据库相关配置
         "UserName":"*******",
         "Pwd":"******",
         "Source":"ip:port/sid"
     },
     "RunSql":{
+        //执行的sql 需要注意 select必须是如下字段且顺序不可更改 因为查询结果为平仓报文的信息
+        // U_ID,CONTRACT_ENAME,CONTRACT_DATE,POSITION_ID,NUM,BUYORSELL
         "Sql":["select * from dual"]
     }
 }
+/*
+实例
+{
+    "Tick":1,
+    "Log":{
+        "Path":"/home/fpp/log.txt"
+    },
+    "Redis":{
+        "Uri":"redis://127.0.0.1:6379",
+        "WriteId":"25"
+    },
+    "Oracle":{
+        "UserName":"fpp",
+        "Pwd":"!QAZ314sdfDend",
+        "Source":"47.101.62.62:1521/orcl"
+    },
+    "RunSql":{
+        "Sql":["select U_ID,CONTRACT_ENAME,CONTRACT_DATE,POSITION_ID,NUM,BUYORSELL from yishenglong_trad_position where position_id=500002661002"]
+    }
+}
+*/

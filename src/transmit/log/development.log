@@ -1,0 +1,51 @@
+2019-05-17T14:58:53.0103059+08:00 [-] [-] [development] [I] [log.go:69] mqant  starting up
+2019-05-17T14:58:53.0103059+08:00 [-] [-] [development] [I] [log.go:69] This service ProcessID is [development]
+2019-05-17T14:58:53.0103059+08:00 [-] [-] [development] [I] [log.go:69] Registering node: Proxy@300ef8d8f7c166bd
+2019-05-17T14:58:53.0153051+08:00 [-] [-] [development] [I] [log.go:69] Registering node: Dump@68467b03c8d6adda
+2019-05-17T14:58:53.0153051+08:00 [-] [-] [development] [I] [log.go:69] proxy listening On: 0.0.0.0:9976
+2019-05-17T14:59:24.5788107+08:00 [-] [-] [development] [I] [log.go:69] reqDump POST /trip/sync/ HTTP/1.1
+Host: 127.0.0.1:9976
+Accept: */*
+Content-Length: 566
+Content-Type: application/json
+User-Agent: curl/7.55.1
+
+'{trip_no:2608674610709504,op_id:C120120170000018,fellow_no:0000000000000000,user_id:2231566612315668,service_id:02,in_voucher_no:2608674610709504,in_qrcode_data:AhEQBKMQEgGAAAApMQAAAQA8AgAmCGdGEHCVBALcPT8AAAAAAABoMRgAAAAAAAAAAAAAJghnRhBwlQQAAAAAAAAVrWhU0JOBFMZkWWQNaciU6zSpzAur03avlOauwcJCZNurNxmgk1Si88rutaK7Sy8Hfr5q+M52ayfsSVUf+54bxQ==,in_line_no:0001,in_line_name:天津测试1路,in_station_no:0111,in_station_name:未知站点,in_time:20180707094234,in_status:01,in_sys_time:20180707094234,in_confirm_type:01,out_status:,trip_sts:01,trip_sts_seq:1,trip_change_reason:}'
+2019-05-17T14:59:24.579811+08:00 [-] [-] [development] [W] [log.go:79] result chan closed 
+github.com/liangdas/mqant/log/log.go:79
+github.com/liangdas/mqant/selector/cache/cache.go:288
+runtime/asm_amd64.s:1337
+2019-05-17T14:59:24.579811+08:00 [-] [-] [development] [W] [log.go:79] result chan closed 
+github.com/liangdas/mqant/log/log.go:79
+github.com/liangdas/mqant/selector/cache/cache.go:288
+runtime/asm_amd64.s:1337
+2019-05-22T17:50:33.5518572+08:00 [-] [-] [development] [I] [log.go:69] mqant  starting up
+2019-05-22T17:50:33.5518572+08:00 [-] [-] [development] [I] [log.go:69] This service ProcessID is [development]
+2019-05-22T17:51:18.1524747+08:00 [-] [-] [development] [I] [log.go:69] mqant  starting up
+2019-05-22T17:51:18.1524747+08:00 [-] [-] [development] [I] [log.go:69] This service ProcessID is [development]
+2019-05-22T17:53:04.1889908+08:00 [-] [-] [development] [I] [log.go:69] mqant  starting up
+2019-05-22T17:53:04.1889908+08:00 [-] [-] [development] [I] [log.go:69] This service ProcessID is [development]
+2019-05-22T17:53:04.1894906+08:00 [-] [-] [development] [I] [log.go:69] Registering node: HttpProxy@5d32ac8fdf9db0ce
+2019-05-22T17:53:04.2214893+08:00 [-] [-] [development] [I] [log.go:69] HttpProxy listening On: 0.0.0.0:9976
+2019-05-22T17:53:04.222494+08:00 [-] [-] [development] [I] [log.go:69] Registering node: Dump@fe4d17cd54825e69
+2019-05-22T17:54:32.099353+08:00 [-] [-] [development] [I] [log.go:69] Deregistering node: HttpProxy@5d32ac8fdf9db0ce
+2019-05-22T17:54:32.099353+08:00 [-] [-] [development] [I] [log.go:69] Deregistering node: Dump@fe4d17cd54825e69
+2019-05-22T17:54:32.099854+08:00 [-] [-] [development] [I] [log.go:69] Deregistering node: Dump@fe4d17cd54825e69
+2019-05-22T17:54:32.1053546+08:00 [-] [-] [development] [I] [log.go:69] RPCServer closeing id(HttpProxy@5d32ac8fdf9db0ce)
+2019-05-22T17:54:32.1053546+08:00 [-] [-] [development] [I] [log.go:69] RPCServer close success id(HttpProxy@5d32ac8fdf9db0ce)
+2019-05-22T17:54:32.1093539+08:00 [-] [-] [development] [I] [log.go:69] RPCServer closeing id(Dump@fe4d17cd54825e69)
+2019-05-22T17:54:32.1098538+08:00 [-] [-] [development] [I] [log.go:69] RPCServer close success id(Dump@fe4d17cd54825e69)
+2019-05-22T17:54:32.1098538+08:00 [-] [-] [development] [I] [log.go:69] Deregistering node: HttpProxy@5d32ac8fdf9db0ce
+2019-05-22T17:54:33.5450224+08:00 [-] [-] [development] [I] [log.go:69] mqant  starting up
+2019-05-22T17:54:33.5455212+08:00 [-] [-] [development] [I] [log.go:69] This service ProcessID is [development]
+2019-05-22T17:54:33.5455212+08:00 [-] [-] [development] [I] [log.go:69] Registering node: HttpProxy@b8921d16f0e1d07c
+2019-05-22T17:54:33.5490174+08:00 [-] [-] [development] [I] [log.go:69] Registering node: Dump@9c5631297c7e2520
+2019-05-22T17:54:33.5490174+08:00 [-] [-] [development] [I] [log.go:69] HttpProxy listening On: 0.0.0.0:9976
+2019-05-22T17:54:35.1539774+08:00 [-] [-] [development] [I] [log.go:69] Deregistering node: HttpProxy@b8921d16f0e1d07c
+2019-05-22T17:54:35.1539774+08:00 [-] [-] [development] [I] [log.go:69] Deregistering node: Dump@9c5631297c7e2520
+2019-05-22T17:54:35.1544798+08:00 [-] [-] [development] [I] [log.go:69] Deregistering node: Dump@9c5631297c7e2520
+2019-05-22T17:54:35.1574814+08:00 [-] [-] [development] [I] [log.go:69] RPCServer closeing id(HttpProxy@b8921d16f0e1d07c)
+2019-05-22T17:54:35.1574814+08:00 [-] [-] [development] [I] [log.go:69] RPCServer close success id(HttpProxy@b8921d16f0e1d07c)
+2019-05-22T17:54:35.1584806+08:00 [-] [-] [development] [I] [log.go:69] RPCServer closeing id(Dump@9c5631297c7e2520)
+2019-05-22T17:54:35.1584806+08:00 [-] [-] [development] [I] [log.go:69] RPCServer close success id(Dump@9c5631297c7e2520)
+2019-05-22T17:54:35.1584806+08:00 [-] [-] [development] [I] [log.go:69] Deregistering node: HttpProxy@b8921d16f0e1d07c

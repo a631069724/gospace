@@ -17,7 +17,6 @@ type FundsChecker struct {
 	db             *sql.DB
 	/*观察者对象 用于通知事件变化 fundschecker对象用此通知需要处理的持仓*/
 	subject.Observable
-	position.Position
 }
 
 func NewFundsChecker(c conf.Config) *FundsChecker {
@@ -48,12 +47,11 @@ func (this *FundsChecker) Check() error {
 			pst := position.DefaultPosition{}
 			rows.Scan(&pst.UserId, &pst.ContrctEname, &pst.ContractDate, &pst.PositionId,
 				&pst.Num, &pst.BuyOrSell)
-			this.Position = &pst
 			this.updateFlag(pst.PositionId)
 			this.deleteFollowRelation(pst.UserId)
 			log.Info("Position:%d Notify", pst.PositionId)
 			this.SetChanged()
-			this.NotifyObserver(pst)
+			this.NotifyObserver(&pst)
 
 		}
 	}
@@ -65,11 +63,12 @@ func (this *FundsChecker) GetObservable() subject.Observable {
 }
 
 func (this *FundsChecker) updateFlag(PositionId int64) {
-	this.db.Exec(`update yishenglong_trad_position set SFORCE_CLOSE_FLAG='21' where position_id=%d`, PositionId)
+	this.db.Exec(fmt.Sprintf(`update yishenglong_trad_position set SFORCE_CLOSE_FLAG='21' where position_id=%d`, PositionId))
 	this.db.Exec("commit")
 }
 
 func (this *FundsChecker) deleteFollowRelation(fwUid string) {
-	this.db.Exec(`delete yishenglong_follow_relation where fw_u_id=%s`, fwUid)
+	this.db.Exec(fmt.Sprintf(`update yishenglong_follow_relation  set is_enable='0'  where fw_u_id=%s`, fwUid))
+	this.db.Exec(fmt.Sprintf(`update yishenglong_follow_users set is_enable='0' where fw_u_id=%s`, fwUid))
 	this.db.Exec("commit")
 }

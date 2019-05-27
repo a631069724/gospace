@@ -1,0 +1,53 @@
+2019-05-17T19:09:33.8317401+08:00 [-] [-] [Dump] [I] [log.go:69] mqant  starting up
+2019-05-17T19:09:33.8317401+08:00 [-] [-] [Dump] [I] [log.go:69] This service ProcessID is [Dump]
+2019-05-17T19:09:33.8317401+08:00 [-] [-] [Dump] [I] [log.go:69] Registering node: Dump@00b5db492bb499c2
+2019-05-17T20:00:35.6536489+08:00 [-] [-] [Dump] [I] [log.go:69] mqant  starting up
+2019-05-17T20:00:35.6536489+08:00 [-] [-] [Dump] [I] [log.go:69] This service ProcessID is [Dump]
+2019-05-17T20:00:35.6536489+08:00 [-] [-] [Dump] [I] [log.go:69] Registering node: Dump@0fdbf2618222350f
+2019-05-17T20:00:53.8564418+08:00 [-] [-] [Dump] [I] [log.go:69] Deregistering node: Dump@0fdbf2618222350f
+2019-05-17T20:00:53.8564418+08:00 [-] [-] [Dump] [I] [log.go:69] Deregistering node: Dump@0fdbf2618222350f
+2019-05-17T20:00:53.8614363+08:00 [-] [-] [Dump] [I] [log.go:69] RPCServer closeing id(Dump@0fdbf2618222350f)
+2019-05-17T20:00:53.8614363+08:00 [-] [-] [Dump] [I] [log.go:69] RPCServer closeing id(Dump@0fdbf2618222350f)
+2019-05-17T20:01:21.527571+08:00 [-] [-] [Dump] [I] [log.go:69] mqant  starting up
+2019-05-17T20:01:21.527571+08:00 [-] [-] [Dump] [I] [log.go:69] This service ProcessID is [Dump]
+2019-05-17T20:01:21.527571+08:00 [-] [-] [Dump] [I] [log.go:69] Registering node: Dump@43a11f9ee8f6b8b2
+2019-05-17T20:03:13.5497321+08:00 [-] [-] [Dump] [W] [log.go:79] service run Server.Register error: %!(EXTRA *url.Error=Put http://127.0.0.1:8500/v1/agent/service/register: dial tcp 127.0.0.1:8500: connectex: No connection could be made because the target machine actively refused it.) 
+github.com/liangdas/mqant/log/log.go:79
+github.com/liangdas/mqant/service/service.go:44
+runtime/asm_amd64.s:1337
+2019-05-17T20:03:23.5480466+08:00 [-] [-] [Dump] [W] [log.go:79] service run Server.Register error: %!(EXTRA *url.Error=Put http://127.0.0.1:8500/v1/agent/service/register: dial tcp 127.0.0.1:8500: connectex: No connection could be made because the target machine actively refused it.) 
+github.com/liangdas/mqant/log/log.go:79
+github.com/liangdas/mqant/service/service.go:44
+runtime/asm_amd64.s:1337
+2019-05-17T20:04:11.8156145+08:00 [-] [-] [Dump] [I] [log.go:69] Deregistering node: Dump@43a11f9ee8f6b8b2
+2019-05-17T20:04:11.8156145+08:00 [-] [-] [Dump] [I] [log.go:69] Deregistering node: Dump@43a11f9ee8f6b8b2
+2019-05-17T20:04:11.8196116+08:00 [-] [-] [Dump] [I] [log.go:69] RPCServer closeing id(Dump@43a11f9ee8f6b8b2)
+2019-05-17T20:04:11.8206094+08:00 [-] [-] [Dump] [I] [log.go:69] RPCServer close success id(Dump@43a11f9ee8f6b8b2)
+2019-05-17T20:09:33.2582694+08:00 [-] [-] [Dump] [I] [log.go:69] mqant  starting up
+2019-05-17T20:09:33.2582694+08:00 [-] [-] [Dump] [I] [log.go:69] This service ProcessID is [Dump]
+2019-05-17T20:09:33.2582694+08:00 [-] [-] [Dump] [I] [log.go:69] Registering node: Dump@ddbb1d1dc4ce384d
+2019-05-17T20:10:26.0562189+08:00 [-] [-] [Dump] [W] [log.go:79] service run Server.Register error: %!(EXTRA *url.Error=Put http://127.0.0.1:8500/v1/agent/service/register: dial tcp 127.0.0.1:8500: connectex: No connection could be made because the target machine actively refused it.) 
+github.com/liangdas/mqant/log/log.go:79
+github.com/liangdas/mqant/service/service.go:44
+runtime/asm_amd64.s:1337
+2019-05-17T20:10:36.0562657+08:00 [-] [-] [Dump] [W] [log.go:79] service run Server.Register error: %!(EXTRA *url.Error=Put http://127.0.0.1:8500/v1/agent/service/register: dial tcp 127.0.0.1:8500: connectex: No connection could be made because the target machine actively refused it.) 
+github.com/liangdas/mqant/log/log.go:79
+github.com/liangdas/mqant/service/service.go:44
+runtime/asm_amd64.s:1337
+2019-05-17T20:10:49.1287747+08:00 [-] [-] [Dump] [I] [log.go:69] Deregistering node: Dump@ddbb1d1dc4ce384d
+2019-05-17T20:10:49.1287747+08:00 [-] [-] [Dump] [I] [log.go:69] Deregistering node: Dump@ddbb1d1dc4ce384d
+2019-05-17T20:10:49.1307747+08:00 [-] [-] [Dump] [I] [log.go:69] RPCServer closeing id(Dump@ddbb1d1dc4ce384d)
+2019-05-17T20:10:49.1307747+08:00 [-] [-] [Dump] [I] [log.go:69] RPCServer close success id(Dump@ddbb1d1dc4ce384d)
+2019-05-17T20:10:51.1256134+08:00 [-] [-] [Dump] [I] [log.go:69] mqant  starting up
+2019-05-17T20:10:51.1256134+08:00 [-] [-] [Dump] [I] [log.go:69] This service ProcessID is [Dump]
+2019-05-17T20:10:51.1256134+08:00 [-] [-] [Dump] [I] [log.go:69] Registering node: Dump@ac39edec55b2df14
+2019-05-17T20:12:29.8665563+08:00 [-] [-] [Dump] [I] [log.go:69] Deregistering node: Dump@ac39edec55b2df14
+2019-05-17T20:12:29.8665563+08:00 [-] [-] [Dump] [I] [log.go:69] Deregistering node: Dump@ac39edec55b2df14
+2019-05-17T20:12:32.8047972+08:00 [-] [-] [Dump] [I] [log.go:69] mqant  starting up
+2019-05-17T20:12:32.8047972+08:00 [-] [-] [Dump] [I] [log.go:69] This service ProcessID is [Dump]
+2019-05-17T20:12:32.8047972+08:00 [-] [-] [Dump] [I] [log.go:69] Registering node: Dump@a2806268db24c35e
+2019-05-17T20:13:12.4547502+08:00 [-] [-] [Dump] [I] [log.go:69] Deregistering node: Dump@a2806268db24c35e
+2019-05-17T20:13:12.4547502+08:00 [-] [-] [Dump] [I] [log.go:69] Deregistering node: Dump@a2806268db24c35e
+2019-05-17T20:13:24.7363236+08:00 [-] [-] [Dump] [I] [log.go:69] mqant  starting up
+2019-05-17T20:13:24.7363236+08:00 [-] [-] [Dump] [I] [log.go:69] This service ProcessID is [Dump]
+2019-05-17T20:13:24.7363236+08:00 [-] [-] [Dump] [I] [log.go:69] Registering node: Dump@de7f3f6e5cd41931

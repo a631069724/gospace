@@ -1,0 +1,178 @@
+2019-05-17T19:08:35.8895433+08:00 [-] [-] [Proxy] [I] [log.go:69] mqant  starting up
+2019-05-17T19:08:35.8910092+08:00 [-] [-] [Proxy] [I] [log.go:69] This service ProcessID is [Proxy]
+2019-05-17T19:08:35.8910092+08:00 [-] [-] [Proxy] [I] [log.go:69] Registering node: Proxy@3fb20a63abfc3875
+2019-05-17T19:08:35.9190161+08:00 [-] [-] [Proxy] [I] [log.go:69] proxy listening On: 0.0.0.0:9976
+2019-05-17T19:08:40.9391914+08:00 [-] [-] [Proxy] [I] [log.go:69] Deregistering node: Proxy@3fb20a63abfc3875
+2019-05-17T19:08:40.9391914+08:00 [-] [-] [Proxy] [I] [log.go:69] Deregistering node: Proxy@3fb20a63abfc3875
+2019-05-17T19:08:40.9421886+08:00 [-] [-] [Proxy] [I] [log.go:69] RPCServer closeing id(Proxy@3fb20a63abfc3875)
+2019-05-17T19:08:40.9421886+08:00 [-] [-] [Proxy] [I] [log.go:69] RPCServer close success id(Proxy@3fb20a63abfc3875)
+2019-05-17T19:09:18.2943699+08:00 [-] [-] [Proxy] [I] [log.go:69] mqant  starting up
+2019-05-17T19:09:18.2943699+08:00 [-] [-] [Proxy] [I] [log.go:69] This service ProcessID is [Proxy]
+2019-05-17T19:09:18.2943699+08:00 [-] [-] [Proxy] [I] [log.go:69] Registering node: Proxy@a07533bf9036ee11
+2019-05-17T19:09:18.3003686+08:00 [-] [-] [Proxy] [I] [log.go:69] proxy listening On: 0.0.0.0:9976
+2019-05-17T19:09:51.1755547+08:00 [-] [-] [Proxy] [E] [log.go:74] dail to:127.0.0.1:7789 err:dial tcp 127.0.0.1:7789: connectex: No connection could be made because the target machine actively refused it. 
+github.com/liangdas/mqant/log/log.go:74
+transmit/proxy/module.go:90
+net/http/server.go:2774
+net/http/server.go:1878
+2019-05-17T19:10:39.3186965+08:00 [-] [-] [Proxy] [I] [log.go:69] reqDump POST /trip/sync/ HTTP/1.1
+Host: 127.0.0.1:9976
+Accept: */*
+Content-Length: 566
+Content-Type: application/json
+User-Agent: curl/7.55.1
+
+'{trip_no:2608674610709504,op_id:C120120170000018,fellow_no:0000000000000000,user_id:2231566612315668,service_id:02,in_voucher_no:2608674610709504,in_qrcode_data:AhEQBKMQEgGAAAApMQAAAQA8AgAmCGdGEHCVBALcPT8AAAAAAABoMRgAAAAAAAAAAAAAJghnRhBwlQQAAAAAAAAVrWhU0JOBFMZkWWQNaciU6zSpzAur03avlOauwcJCZNurNxmgk1Si88rutaK7Sy8Hfr5q+M52ayfsSVUf+54bxQ==,in_line_no:0001,in_line_name:天津测试1路,in_station_no:0111,in_station_name:未知站点,in_time:20180707094234,in_status:01,in_sys_time:20180707094234,in_confirm_type:01,out_status:,trip_sts:01,trip_sts_seq:1,trip_change_reason:}'
+2019-05-17T19:10:39.3196964+08:00 [-] [-] [Proxy] [W] [log.go:79] result chan closed 
+github.com/liangdas/mqant/log/log.go:79
+github.com/liangdas/mqant/selector/cache/cache.go:288
+runtime/asm_amd64.s:1337
+2019-05-17T19:10:39.3196964+08:00 [-] [-] [Proxy] [W] [log.go:79] result chan closed 
+github.com/liangdas/mqant/log/log.go:79
+github.com/liangdas/mqant/selector/cache/cache.go:288
+runtime/asm_amd64.s:1337
+2019-05-17T19:11:28.5524615+08:00 [-] [-] [Proxy] [I] [log.go:69] reqDump POST /trip/sync/ HTTP/1.1
+Host: 127.0.0.1:9976
+Accept: */*
+Content-Length: 566
+Content-Type: application/json
+User-Agent: curl/7.55.1
+
+'{trip_no:2608674610709504,op_id:C120120170000018,fellow_no:0000000000000000,user_id:2231566612315668,service_id:02,in_voucher_no:2608674610709504,in_qrcode_data:AhEQBKMQEgGAAAApMQAAAQA8AgAmCGdGEHCVBALcPT8AAAAAAABoMRgAAAAAAAAAAAAAJghnRhBwlQQAAAAAAAAVrWhU0JOBFMZkWWQNaciU6zSpzAur03avlOauwcJCZNurNxmgk1Si88rutaK7Sy8Hfr5q+M52ayfsSVUf+54bxQ==,in_line_no:0001,in_line_name:天津测试1路,in_station_no:0111,in_station_name:未知站点,in_time:20180707094234,in_status:01,in_sys_time:20180707094234,in_confirm_type:01,out_status:,trip_sts:01,trip_sts_seq:1,trip_change_reason:}'
+2019-05-17T20:00:18.3921457+08:00 [-] [-] [Proxy] [I] [log.go:69] mqant  starting up
+2019-05-17T20:00:18.3931444+08:00 [-] [-] [Proxy] [I] [log.go:69] This service ProcessID is [Proxy]
+2019-05-17T20:00:18.3931444+08:00 [-] [-] [Proxy] [I] [log.go:69] Registering node: Proxy@75b98b7704bfe9af
+2019-05-17T20:00:18.4121327+08:00 [-] [-] [Proxy] [I] [log.go:69] proxy listening On: 0.0.0.0:9976
+2019-05-17T20:00:56.020962+08:00 [-] [-] [Proxy] [I] [log.go:69] Deregistering node: Proxy@75b98b7704bfe9af
+2019-05-17T20:00:56.020962+08:00 [-] [-] [Proxy] [I] [log.go:69] Deregistering node: Proxy@75b98b7704bfe9af
+2019-05-17T20:00:56.02496+08:00 [-] [-] [Proxy] [I] [log.go:69] RPCServer closeing id(Proxy@75b98b7704bfe9af)
+2019-05-17T20:00:56.02496+08:00 [-] [-] [Proxy] [I] [log.go:69] RPCServer closeing id(Proxy@75b98b7704bfe9af)
+2019-05-17T20:01:13.4109349+08:00 [-] [-] [Proxy] [I] [log.go:69] mqant  starting up
+2019-05-17T20:01:13.4109349+08:00 [-] [-] [Proxy] [I] [log.go:69] This service ProcessID is [Proxy]
+2019-05-17T20:01:13.4109349+08:00 [-] [-] [Proxy] [I] [log.go:69] Registering node: Proxy@8e7537742db94684
+2019-05-17T20:01:13.4259243+08:00 [-] [-] [Proxy] [I] [log.go:69] proxy listening On: 0.0.0.0:9976
+2019-05-17T20:01:53.7746616+08:00 [-] [-] [Proxy] [E] [log.go:74] dail to:127.0.0.1:7789 err:dial tcp 127.0.0.1:7789: connectex: No connection could be made because the target machine actively refused it. 
+github.com/liangdas/mqant/log/log.go:74
+transmit/proxy/module.go:90
+net/http/server.go:2774
+net/http/server.go:1878
+2019-05-17T20:03:05.4364094+08:00 [-] [-] [Proxy] [W] [log.go:79] service run Server.Register error: %!(EXTRA *url.Error=Put http://127.0.0.1:8500/v1/agent/service/register: dial tcp 127.0.0.1:8500: connectex: No connection could be made because the target machine actively refused it.) 
+github.com/liangdas/mqant/log/log.go:79
+github.com/liangdas/mqant/service/service.go:44
+runtime/asm_amd64.s:1337
+2019-05-17T20:03:15.4360857+08:00 [-] [-] [Proxy] [W] [log.go:79] service run Server.Register error: %!(EXTRA *url.Error=Put http://127.0.0.1:8500/v1/agent/service/register: dial tcp 127.0.0.1:8500: connectex: No connection could be made because the target machine actively refused it.) 
+github.com/liangdas/mqant/log/log.go:79
+github.com/liangdas/mqant/service/service.go:44
+runtime/asm_amd64.s:1337
+2019-05-17T20:03:25.4392786+08:00 [-] [-] [Proxy] [W] [log.go:79] service run Server.Register error: %!(EXTRA *url.Error=Put http://127.0.0.1:8500/v1/agent/service/register: dial tcp 127.0.0.1:8500: connectex: No connection could be made because the target machine actively refused it.) 
+github.com/liangdas/mqant/log/log.go:79
+github.com/liangdas/mqant/service/service.go:44
+runtime/asm_amd64.s:1337
+2019-05-17T20:04:10.3913791+08:00 [-] [-] [Proxy] [I] [log.go:69] Deregistering node: Proxy@8e7537742db94684
+2019-05-17T20:04:10.3913791+08:00 [-] [-] [Proxy] [I] [log.go:69] Deregistering node: Proxy@8e7537742db94684
+2019-05-17T20:04:10.3913791+08:00 [-] [-] [Proxy] [I] [log.go:69] proxy stop!!!!
+2019-05-17T20:04:10.3973766+08:00 [-] [-] [Proxy] [I] [log.go:69] RPCServer closeing id(Proxy@8e7537742db94684)
+2019-05-17T20:04:10.3973766+08:00 [-] [-] [Proxy] [I] [log.go:69] RPCServer close success id(Proxy@8e7537742db94684)
+2019-05-17T20:09:36.5269696+08:00 [-] [-] [Proxy] [I] [log.go:69] mqant  starting up
+2019-05-17T20:09:36.5279681+08:00 [-] [-] [Proxy] [I] [log.go:69] This service ProcessID is [Proxy]
+2019-05-17T20:09:36.5279681+08:00 [-] [-] [Proxy] [I] [log.go:69] Registering node: Proxy@2f262d418e44f043
+2019-05-17T20:09:36.7232155+08:00 [-] [-] [Proxy] [I] [log.go:69] proxy listening On: 0.0.0.0:9976
+2019-05-17T20:09:41.0856944+08:00 [-] [-] [Proxy] [E] [log.go:74] dail to:127.0.0.1:7789 err:dial tcp 127.0.0.1:7789: connectex: No connection could be made because the target machine actively refused it. 
+github.com/liangdas/mqant/log/log.go:74
+transmit/proxy/module.go:90
+net/http/server.go:2774
+net/http/server.go:1878
+2019-05-17T20:10:28.7320233+08:00 [-] [-] [Proxy] [W] [log.go:79] service run Server.Register error: %!(EXTRA *url.Error=Put http://127.0.0.1:8500/v1/agent/service/register: dial tcp 127.0.0.1:8500: connectex: No connection could be made because the target machine actively refused it.) 
+github.com/liangdas/mqant/log/log.go:79
+github.com/liangdas/mqant/service/service.go:44
+runtime/asm_amd64.s:1337
+2019-05-17T20:10:43.6694237+08:00 [-] [-] [Proxy] [E] [log.go:74] dail to:127.0.0.1:7789 err:dial tcp 127.0.0.1:7789: connectex: No connection could be made because the target machine actively refused it. 
+github.com/liangdas/mqant/log/log.go:74
+transmit/proxy/module.go:90
+net/http/server.go:2774
+net/http/server.go:1878
+2019-05-17T20:10:47.8151355+08:00 [-] [-] [Proxy] [I] [log.go:69] Deregistering node: Proxy@2f262d418e44f043
+2019-05-17T20:10:47.8151355+08:00 [-] [-] [Proxy] [I] [log.go:69] Deregistering node: Proxy@2f262d418e44f043
+2019-05-17T20:10:47.818134+08:00 [-] [-] [Proxy] [I] [log.go:69] RPCServer closeing id(Proxy@2f262d418e44f043)
+2019-05-17T20:10:47.818134+08:00 [-] [-] [Proxy] [I] [log.go:69] RPCServer close success id(Proxy@2f262d418e44f043)
+2019-05-17T20:10:54.1661748+08:00 [-] [-] [Proxy] [I] [log.go:69] mqant  starting up
+2019-05-17T20:10:54.1661748+08:00 [-] [-] [Proxy] [I] [log.go:69] This service ProcessID is [Proxy]
+2019-05-17T20:10:54.1661748+08:00 [-] [-] [Proxy] [I] [log.go:69] Registering node: Proxy@cab921e94625c67e
+2019-05-17T20:10:54.170173+08:00 [-] [-] [Proxy] [I] [log.go:69] proxy listening On: 0.0.0.0:9976
+2019-05-17T20:11:12.3000755+08:00 [-] [-] [Proxy] [E] [log.go:74] dail to:127.0.0.1:7789 err:dial tcp 127.0.0.1:7789: connectex: No connection could be made because the target machine actively refused it. 
+github.com/liangdas/mqant/log/log.go:74
+transmit/proxy/module.go:90
+net/http/server.go:2774
+net/http/server.go:1878
+2019-05-17T20:12:11.3908632+08:00 [-] [-] [Proxy] [E] [log.go:74] dail to:127.0.0.1:7789 err:dial tcp 127.0.0.1:7789: connectex: No connection could be made because the target machine actively refused it. 
+github.com/liangdas/mqant/log/log.go:74
+transmit/proxy/module.go:90
+net/http/server.go:2774
+net/http/server.go:1878
+2019-05-17T20:12:28.115639+08:00 [-] [-] [Proxy] [I] [log.go:69] Deregistering node: Proxy@cab921e94625c67e
+2019-05-17T20:12:28.115639+08:00 [-] [-] [Proxy] [I] [log.go:69] Deregistering node: Proxy@cab921e94625c67e
+2019-05-17T20:12:28.1186376+08:00 [-] [-] [Proxy] [I] [log.go:69] RPCServer closeing id(Proxy@cab921e94625c67e)
+2019-05-17T20:12:28.1186376+08:00 [-] [-] [Proxy] [I] [log.go:69] RPCServer close success id(Proxy@cab921e94625c67e)
+2019-05-17T20:12:35.9972322+08:00 [-] [-] [Proxy] [I] [log.go:69] mqant  starting up
+2019-05-17T20:12:35.9982316+08:00 [-] [-] [Proxy] [I] [log.go:69] This service ProcessID is [Proxy]
+2019-05-17T20:12:35.9982316+08:00 [-] [-] [Proxy] [I] [log.go:69] Registering node: Proxy@378a5874677f071c
+2019-05-17T20:12:36.001228+08:00 [-] [-] [Proxy] [I] [log.go:69] proxy listening On: 0.0.0.0:9976
+2019-05-17T20:12:40.9125393+08:00 [-] [-] [Proxy] [E] [log.go:74] dail to:127.0.0.1:7789 err:dial tcp 127.0.0.1:7789: connectex: No connection could be made because the target machine actively refused it. 
+github.com/liangdas/mqant/log/log.go:74
+transmit/proxy/module.go:90
+net/http/server.go:2774
+net/http/server.go:1878
+2019-05-17T20:13:01.217865+08:00 [-] [-] [Proxy] [I] [log.go:69] reqDump POST /trip/sync/ HTTP/1.1
+Host: 127.0.0.1:9976
+Accept: */*
+Content-Length: 566
+Content-Type: application/json
+User-Agent: curl/7.55.1
+
+'{trip_no:2608674610709504,op_id:C120120170000018,fellow_no:0000000000000000,user_id:2231566612315668,service_id:02,in_voucher_no:2608674610709504,in_qrcode_data:AhEQBKMQEgGAAAApMQAAAQA8AgAmCGdGEHCVBALcPT8AAAAAAABoMRgAAAAAAAAAAAAAJghnRhBwlQQAAAAAAAAVrWhU0JOBFMZkWWQNaciU6zSpzAur03avlOauwcJCZNurNxmgk1Si88rutaK7Sy8Hfr5q+M52ayfsSVUf+54bxQ==,in_line_no:0001,in_line_name:天津测试1路,in_station_no:0111,in_station_name:未知站点,in_time:20180707094234,in_status:01,in_sys_time:20180707094234,in_confirm_type:01,out_status:,trip_sts:01,trip_sts_seq:1,trip_change_reason:}'
+2019-05-17T20:13:01.2188639+08:00 [-] [-] [Proxy] [W] [log.go:79] result chan closed 
+github.com/liangdas/mqant/log/log.go:79
+github.com/liangdas/mqant/selector/cache/cache.go:288
+runtime/asm_amd64.s:1337
+2019-05-17T20:13:01.2188639+08:00 [-] [-] [Proxy] [W] [log.go:79] result chan closed 
+github.com/liangdas/mqant/log/log.go:79
+github.com/liangdas/mqant/selector/cache/cache.go:288
+runtime/asm_amd64.s:1337
+2019-05-17T20:13:13.2369308+08:00 [-] [-] [Proxy] [I] [log.go:69] Deregistering node: Proxy@378a5874677f071c
+2019-05-17T20:13:13.2369308+08:00 [-] [-] [Proxy] [I] [log.go:69] Deregistering node: Proxy@378a5874677f071c
+2019-05-17T20:13:26.7387855+08:00 [-] [-] [Proxy] [I] [log.go:69] mqant  starting up
+2019-05-17T20:13:26.7387855+08:00 [-] [-] [Proxy] [I] [log.go:69] This service ProcessID is [Proxy]
+2019-05-17T20:13:26.7387855+08:00 [-] [-] [Proxy] [I] [log.go:69] Registering node: Proxy@3433cc89b54d7547
+2019-05-17T20:13:26.9505144+08:00 [-] [-] [Proxy] [I] [log.go:69] proxy listening On: 0.0.0.0:9976
+2019-05-17T20:13:33.6663421+08:00 [-] [-] [Proxy] [I] [log.go:69] reqDump POST /trip/sync/ HTTP/1.1
+Host: 127.0.0.1:9976
+Accept: */*
+Content-Length: 566
+Content-Type: application/json
+User-Agent: curl/7.55.1
+
+'{trip_no:2608674610709504,op_id:C120120170000018,fellow_no:0000000000000000,user_id:2231566612315668,service_id:02,in_voucher_no:2608674610709504,in_qrcode_data:AhEQBKMQEgGAAAApMQAAAQA8AgAmCGdGEHCVBALcPT8AAAAAAABoMRgAAAAAAAAAAAAAJghnRhBwlQQAAAAAAAAVrWhU0JOBFMZkWWQNaciU6zSpzAur03avlOauwcJCZNurNxmgk1Si88rutaK7Sy8Hfr5q+M52ayfsSVUf+54bxQ==,in_line_no:0001,in_line_name:天津测试1路,in_station_no:0111,in_station_name:未知站点,in_time:20180707094234,in_status:01,in_sys_time:20180707094234,in_confirm_type:01,out_status:,trip_sts:01,trip_sts_seq:1,trip_change_reason:}'
+2019-05-17T20:13:33.6663421+08:00 [-] [-] [Proxy] [W] [log.go:79] result chan closed 
+github.com/liangdas/mqant/log/log.go:79
+github.com/liangdas/mqant/selector/cache/cache.go:288
+runtime/asm_amd64.s:1337
+2019-05-17T20:13:33.6673428+08:00 [-] [-] [Proxy] [W] [log.go:79] result chan closed 
+github.com/liangdas/mqant/log/log.go:79
+github.com/liangdas/mqant/selector/cache/cache.go:288
+runtime/asm_amd64.s:1337
+2019-05-17T20:13:53.2162639+08:00 [-] [-] [Proxy] [I] [log.go:69] reqDump POST /trip/sync/ HTTP/1.1
+Host: 127.0.0.1:9976
+Accept: */*
+Content-Length: 566
+Content-Type: application/json
+User-Agent: curl/7.55.1
+
+'{trip_no:2608674610709504,op_id:C120120170000018,fellow_no:0000000000000000,user_id:2231566612315668,service_id:02,in_voucher_no:2608674610709504,in_qrcode_data:AhEQBKMQEgGAAAApMQAAAQA8AgAmCGdGEHCVBALcPT8AAAAAAABoMRgAAAAAAAAAAAAAJghnRhBwlQQAAAAAAAAVrWhU0JOBFMZkWWQNaciU6zSpzAur03avlOauwcJCZNurNxmgk1Si88rutaK7Sy8Hfr5q+M52ayfsSVUf+54bxQ==,in_line_no:0001,in_line_name:天津测试1路,in_station_no:0111,in_station_name:未知站点,in_time:20180707094234,in_status:01,in_sys_time:20180707094234,in_confirm_type:01,out_status:,trip_sts:01,trip_sts_seq:1,trip_change_reason:}'
+2019-05-17T20:14:12.2572037+08:00 [-] [-] [Proxy] [I] [log.go:69] reqDump POST /trip/sync/ HTTP/1.1
+Host: 127.0.0.1:9976
+Accept: */*
+Content-Length: 566
+Content-Type: application/json
+User-Agent: curl/7.55.1
+
+'{trip_no:2608674610709504,op_id:C120120170000018,fellow_no:0000000000000000,user_id:2231566612315668,service_id:02,in_voucher_no:2608674610709504,in_qrcode_data:AhEQBKMQEgGAAAApMQAAAQA8AgAmCGdGEHCVBALcPT8AAAAAAABoMRgAAAAAAAAAAAAAJghnRhBwlQQAAAAAAAAVrWhU0JOBFMZkWWQNaciU6zSpzAur03avlOauwcJCZNurNxmgk1Si88rutaK7Sy8Hfr5q+M52ayfsSVUf+54bxQ==,in_line_no:0001,in_line_name:天津测试1路,in_station_no:0111,in_station_name:未知站点,in_time:20180707094234,in_status:01,in_sys_time:20180707094234,in_confirm_type:01,out_status:,trip_sts:01,trip_sts_seq:1,trip_change_reason:}'

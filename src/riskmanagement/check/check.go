@@ -27,7 +27,7 @@ func Run() {
 	fundsproc.NewFundsProcer(fchk.GetObservable(), conf.Conf.Redis)
 	tick := time.Duration(conf.Conf.Tick)
 	sigs := make(chan os.Signal, 1)
-	signal.Notify(sigs, syscall.SIGTERM, syscall.SIGUSR1)
+	signal.Notify(sigs, syscall.SIGTERM)
 	fmt.Println("=====risk management bigen running=====")
 	for {
 		select {

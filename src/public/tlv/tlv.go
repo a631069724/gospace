@@ -3,6 +3,7 @@ package tlv
 import (
 	"errors"
 	"fmt"
+	"strconv"
 	"sync"
 )
 
@@ -46,4 +47,13 @@ func (this *TlvPacker) Pack() []byte {
 	retData = append(retData, []byte(fmt.Sprintf("%05d", dataLen))...)
 	retData = append(retData, retDataTmp...)
 	return retData
+}
+
+func (this *TlvPacker) UnPack(data []byte) error {
+	var tmp []byte
+	tmp = data[:3]
+	tagCount, err := strconv.Atoi(string(tmp))
+	if err != nil {
+		return errors.New(fmt.Sprintf("tag=[%s] count err: %s", tmp, err.Error()))
+	}
 }
